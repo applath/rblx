@@ -2,17 +2,14 @@
 <html>
   <head>
     <script>
-      window.onload = function () {
-        const queryString = window.location.search;
-        const urlParams = new URLSearchParams(queryString);
-        const placeId = urlParams.get("placeId");
-        const gameInstanceId = urlParams.get("gameInstanceId");
-
-        const robloxdirect = `roblox://experiences/start?placeId=${placeId}&gameInstanceId=${gameInstanceId}`;
-
-        window.location.replace(robloxdirect);
-      };
+        window.onload = function () {
+            const queryString = window.location.search
+            const urlParams = new URLSearchParams(queryString)
+            window.location.replace(`roblox://experiences/start?placeId=${urlParams.get("placeId")}&gameInstanceId=${urlParams.get("gameInstanceId")}`)
+        }
     </script>
   </head>
-  <body></body>
+  <body>
+    <p>source code by thehunt.click</p>
+  </body>
 </html>
