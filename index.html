@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      window.onload = function () {
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const placeId = urlParams.get("placeId");
+        const gameInstanceId = urlParams.get("gameInstanceId");
+
+        const robloxdirect = `roblox://experiences/start?placeId=${placeId}&gameInstanceId=${gameInstanceId}`;
+
+        window.location.replace(robloxdirect);
+      };
+    </script>
+  </head>
+  <body></body>
+</html>
