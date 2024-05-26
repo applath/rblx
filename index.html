@@ -2,14 +2,9 @@
 <html>
   <head>
     <script>
-        window.onload = function () {
-            const queryString = window.location.search
-            const urlParams = new URLSearchParams(queryString)
-            window.location.replace(`roblox://experiences/start?placeId=${urlParams.get("placeId")}&gameInstanceId=${urlParams.get("gameInstanceId")}`)
-        }
+window.onload=()=>window.location.replace(`roblox://experiences/start?placeId=${new URLSearchParams(location.search).get("placeId")}&gameInstanceId=${new URLSearchParams(location.search).get("gameInstanceId")}`);
     </script>
   </head>
   <body>
-    <p>source code by thehunt.click</p>
   </body>
 </html>
